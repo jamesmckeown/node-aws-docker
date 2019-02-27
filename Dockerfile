@@ -1,6 +1,6 @@
 FROM node:11.10.0-alpine
 
-MAINTAINER James McKeown <jamesmckeown@gmail.com>
+LABEL maintainer="jamesmckeown@gmail.com"
 
 # Install awscli and build tools for node-gyp
 RUN \
