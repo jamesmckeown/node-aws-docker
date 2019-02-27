@@ -10,4 +10,5 @@ RUN \
 	pip install awscli && \
 	apk --purge -v del py-pip && \
 	apk --purge -v del py-setuptools && \
-	rm /var/cache/apk/*
+	rm /var/cache/apk/* && \
+	rm -rf /var/lib/apt/lists/*
