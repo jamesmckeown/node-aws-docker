@@ -2,11 +2,10 @@ FROM node:11.10.0-alpine
 
 LABEL maintainer="jamesmckeown@gmail.com"
 
-# Install awscli and build tools for node-gyp
+# Install awscli
 RUN \
 	mkdir -p /aws && \
-	apk -Uuvt --no-cache add python py-pip \
-	gcc && \
+	apk -Uuvt --no-cache add python py-pip && \
 	pip install awscli && \
 	apk --purge -v del py-pip && \
 	apk --purge -v del py-setuptools && \
