@@ -11,3 +11,5 @@ RUN \
 	apk --purge -v del py-setuptools && \
 	rm /var/cache/apk/* && \
 	rm -rf /var/lib/apt/lists/*
+
+CMD ["sh"]
